@@ -1,0 +1,242 @@
+.app {
+    height: 100vh;
+    display: flex;
+    color: white;
+    background-color:#CF9FFF;
+    background-image:url("assets/sil3.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-position-y: 20%;
+    
+   
+  }
+
+  .main {
+    width: 75%;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0), #CF9FFF), url("assets/bg.jpeg") center ;
+      background-repeat: no-repeat; 
+      
+  display: flex;
+  background-size: cover;
+    flex-direction: column;
+  }
+  .pyramid {
+    width: 25%;
+    background-color:#CF9FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .moneyList {
+    padding: 20px;
+    list-style: none;
+    width: 100%;
+  }
+  
+  .moneyListItem {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .moneyListItem.active {
+    background-color:rgb(179, 237, 218);
+  }
+  .moneyListItemNumber {
+    width: 30%;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  
+  .moneyListItemAmount {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .top {
+    height: 50%;
+    position: relative;
+  }
+  .bottom {
+    height: 50%;
+  }
+  .timer {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 5px #50297a solid ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+    font-size: 30px;
+    font-weight: 700;
+    color:rgb(99, 165, 176);
+  }
+  .trivia {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .question {
+    width: 80%;
+    background: linear-gradient(black,#50297a  );
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 20px;
+  }
+  .answers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .answer {
+    width: 40%;
+    padding: 10px;
+    margin: 0 10px 20px 10px;
+    text-align: center;
+    background: linear-gradient(rgb(164, 242, 245), teal);
+    border: 1px solid white;
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .answer:hover,
+.answer.active {
+  background:#613d85 ;
+}
+
+.answer.correct {
+  animation: correct 3s ease forwards;
+}
+@keyframes correct {
+    0%,
+    22%,
+    42% {
+      background: blue;
+    }
+    20%,
+    40%,
+    60% {
+      background: linear-gradient(#0e0124, #22074d);
+    }
+    62%,
+    100% {
+      background: green;
+    }
+  
+  }
+  .answer.wrong {
+    animation: wrong 3s ease forwards;
+  }
+  
+  @keyframes wrong {
+    0%,
+    22%,
+    42% {
+      background: mediumblue;
+    }
+    20%,
+    40%,
+    60% {
+      background: linear-gradient(#0e0124, #22074d);
+    }
+    62%,
+    100% {
+      background: crimson;
+    }
+  }
+  
+  .endText {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color:#0e0124
+    
+  }
+  
+  .start {
+    width: 350px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 0;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    display: flex;
+  }
+  
+  .startInput {
+    background-color: aquamarine;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(116, 221, 221, 0.5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 200px;
+  }
+  
+  .startInput:focus {
+    outline: none;
+  }
+  
+  .startButton {
+    background-color: aquamarine;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(116, 221, 221, 0.5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+    
+  }
+ 
+  
+  
